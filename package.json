@@ -1,0 +1,19 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "author": "minchao",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "1.5.4",
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "vuepress-theme-reco": "1.5.7"
+  },
+  "dependencies": {
+    "mch-ui": "^0.1.1",
+    "vue-class-component": "^7.2.3"
+  },
+  "description": "minchao's blog & docs"
+}
