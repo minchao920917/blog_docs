@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import Home from '@theme/components/Home'
 import HomeBlog from '@theme/components/HomeBlog'
 import Page from '@theme/components/Page'
 import Footer from '@theme/components/Footer'
@@ -15,7 +14,7 @@ import Common from '@theme/components/Common'
 import { resolveSidebarItems } from '@theme/helpers/utils'
 
 export default {
-  components: { HomeBlog, Home, Page, Common, Footer },
+  components: { HomeBlog, Page, Common, Footer },
   computed: {
     sidebarItems () {
       return resolveSidebarItems(
@@ -30,7 +29,7 @@ export default {
       if (type !== undefined) {
         return type == 'blog' ? 'HomeBlog' : type
       }
-      return 'Home'
+      return 'HomeBlog'
     }
   }
 }
