@@ -112,7 +112,6 @@ window.onresize = function(){
   // animation();
   watchChangeSize();
 };
-
 function watchChangeSize (){
   //可视区的宽/高(DOM)
   //offsetHeight（带边框）和clientHeight（不带边框）区别参考上一篇文章     
