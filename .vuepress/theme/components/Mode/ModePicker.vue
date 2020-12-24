@@ -1,6 +1,6 @@
 <template>
   <div class="mode-options">
-    <h4 class="title">Choose mode</h4>
+    <h4 class="title">模式切换</h4>
     <ul class="color-mode-options">
       <li
         v-for="(mode, index) in modeOptions"
@@ -20,9 +20,9 @@ export default {
   data () {
     return {
       modeOptions: [
-        { mode: 'dark', title: 'dark' },
-        { mode: 'auto', title: 'auto' },
-        { mode: 'light', title: 'light' }
+        { mode: 'dark', title: '夜间模式' },
+        // { mode: 'auto', title: 'auto' },
+        { mode: 'light', title: '白天模式' }
       ],
       currentMode: 'auto'
     }

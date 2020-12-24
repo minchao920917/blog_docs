@@ -2,6 +2,7 @@
 	<div v-click-outside="hideMenu" class="color-picker" v-if="$themeConfig.modePicker !== false" >
 		<a class="color-button" @click.prevent="showMenu = !showMenu">
 			<i class="iconfont reco-color"></i>
+			
 		</a>
 		<transition name="menu-transition" mode="out-in">
 			<div v-show="showMenu" class="color-picker-menu">

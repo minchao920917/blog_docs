@@ -107,3 +107,17 @@ function animation() {
 animation();
 
 }
+window.onresize = function(){
+  console.log(1111);
+  // animation();
+  watchChangeSize();
+};
+
+function watchChangeSize (){
+  //可视区的宽/高(DOM)
+  //offsetHeight（带边框）和clientHeight（不带边框）区别参考上一篇文章     
+  var offsetWid = document.documentElement.clientWidth;
+  var offsetHei = document.documentElement.clientHeight;
+  console.log(offsetWid);
+  console.log(offsetHei);
+}
