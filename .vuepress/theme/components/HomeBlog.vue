@@ -6,11 +6,14 @@
           <universe :title="$title" :description="$description"></universe>
         </ModuleTransition>
         <ModuleTransition delay="0.04">
-          <h1 v-if="recoShowModule && $frontmatter.heroText !== null">
+          <!-- <h1 v-if="recoShowModule && $frontmatter.heroText !== null">
             {{ $frontmatter.heroText || $title || 'vuePress-theme-reco' }}
+          </h1> -->
+           <h1 class="wihte-forever" v-if="recoShowModule && $frontmatter.heroText !== null">
+            {{ 'Blogs & Docs' }}
           </h1>
         </ModuleTransition>
-        <div class="animate seven">
+        <div class="animate seven wihte-forever">
           <!-- <span v-for="str in $description.split(',')" :key="str">{{str}}</span> -->
           <span>今</span>
           <span>天</span>
@@ -27,13 +30,12 @@
           <span>会</span>
           <span>做</span>
         </div>
-        <!-- 
 
         <ModuleTransition delay="0.08">
-          <p v-if="recoShowModule && $frontmatter.tagline !== null" class="description">
-            {{ $frontmatter.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}
+          <p v-if="recoShowModule && $frontmatter.tagline !== null" class="description wihte-forever">
+            {{ "What you won't do today you won't do tomorrow" }}
           </p>
-        </ModuleTransition> -->
+        </ModuleTransition> 
       </div>
     </div>
 
@@ -315,7 +317,9 @@ export default {
       animation: leftRight 0.5s forwards;
       font-weight: bold;
     }
-
+    .wihte-forever span{
+      color:#fff !important;
+    }
     @keyframes leftRight {
       40% {
         transform: translate(50px, 0) scale(0.7);
@@ -345,6 +349,8 @@ export default {
       color: var(--background-color);
     }
 
+
+
     .description {
       width: 100%;
       margin: 1.8rem auto;
@@ -352,6 +358,9 @@ export default {
       line-height: 1.3;
       font-weight: bold;
       color: var(--background-color);
+    }
+    .wihte-forever{
+      color:#fff !important;
     }
   }
 

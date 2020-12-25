@@ -2,7 +2,7 @@
   <Common class="timeline-wrapper" :sidebar="false">
     <ul class="timeline-content">
       <ModuleTransition >
-        <li v-show="recoShowModule" class="desc">Yesterday Once More!</li>
+        <li v-show="recoShowModule" class="desc year">今天不学习，明天变垃圾ε=(´ο｀*)))!</li>
       </ModuleTransition>
       <ModuleTransition
         :delay="String(0.08 * (index + 1))"
@@ -43,6 +43,9 @@ export default {
       const day = dateObj.getDate()
       return `${mon}-${day}`
     }
+  },
+  created(){
+ 
   },
   methods: {
     go (url) {

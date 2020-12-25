@@ -6,7 +6,7 @@
     </span>
     <span v-if="$themeConfig.record">
       <i class="iconfont reco-beian"></i>
-      <a :href="$themeConfig.recordLink || '#'">{{ $themeConfig.record }}</a>
+      <a :href="$themeConfig.recordLink || '#'" target="_blank">{{ $themeConfig.record }}</a>
     </span>
     <span>
       <i class="iconfont reco-copyright"></i>

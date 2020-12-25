@@ -59,13 +59,14 @@ module.exports = {
     // 自动形成侧边导航
     // sidebar: 'auto',
     // 最后更新时间
-    lastUpdated: 'Last Updated',
+    lastUpdated: '最新更新',
     // 作者
     author: '闵超',
     // 作者头像
     authorAvatar: '/logo.png',
     // 备案号
-    record: 'xxxx',
+    record: '苏ICP备17060053号',
+    recordLink: 'http://beian.miit.gov.cn',
     // 项目开始时间
     startYear: '2015'
     /**

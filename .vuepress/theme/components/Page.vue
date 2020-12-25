@@ -126,7 +126,7 @@ export default {
       if (typeof this.$themeConfig.lastUpdated === 'string') {
         return this.$themeConfig.lastUpdated
       }
-      return 'Last Updated'
+      return '最新更新'
     },
     prev () {
       const prev = this.$frontmatter.prev
