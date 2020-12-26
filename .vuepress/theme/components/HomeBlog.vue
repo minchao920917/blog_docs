@@ -318,6 +318,7 @@ export default {
       font-weight: bold;
     }
     .wihte-forever span{
+      
       color:#fff !important;
     }
     @keyframes leftRight {
