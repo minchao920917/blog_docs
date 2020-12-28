@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "mch-ui": "^0.1.1",
-    "vue-class-component": "^7.2.3"
+    "vue-class-component": "^7.2.3",
+    "@vuepress-reco/vuepress-plugin-loading-page": "^1.4.0"
   },
   "description": "minchao's blog & docs"
 }
