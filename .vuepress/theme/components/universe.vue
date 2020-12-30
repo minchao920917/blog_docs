@@ -17,6 +17,14 @@ export default {
   },
   mounted() {
     this.init();
+
+    window.onresize = ()=>{
+      console.log(1111);
+      this.init();
+    };
+
+
+    
   },
   methods: {
     init() {
@@ -28,11 +36,12 @@ export default {
         stars = [],
         count = 0,
         maxStars = 600; //星星数量
-
+      ctx.clearRect(0, 0, w, h);
       var canvas2 = document.createElement("canvas"),
         ctx2 = canvas2.getContext("2d");
       canvas2.width = 100;
       canvas2.height = 100;
+      
       var half = canvas2.width / 2,
         gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
       gradient2.addColorStop(0.025, "#CCC");
@@ -44,7 +53,7 @@ export default {
       ctx2.beginPath();
       ctx2.arc(half, half, half, 0, Math.PI * 2);
       ctx2.fill();
-
+      
       // End cache
 
       function random(min, max) {
@@ -82,7 +91,10 @@ export default {
         this.alpha = random(2, 10) / 10;
 
         count++;
-        stars[count] = this;
+  
+          stars[count] = this;
+      
+        
       };
 
       Star.prototype.draw = function () {
@@ -106,7 +118,6 @@ export default {
         );
         this.timePassed += this.speed;
       };
-
       for (var i = 0; i < maxStars; i++) {
         new Star();
       }
