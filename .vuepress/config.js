@@ -27,6 +27,7 @@ module.exports = {
         items: [
           { text: '掘金', link: 'https://juejin.cn/user/2119514150414702', icon: 'reco-juejin' },
           { text: 'GitHub', link: 'https://github.com/minchao920917', icon: 'reco-github' },
+          { text: '旧版博客', link: 'https://minchao920917.github.io/', icon: 'reco-account' },
         ]
       }
     ],
