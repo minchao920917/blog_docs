@@ -17,6 +17,7 @@
         {{ new Date().getFullYear() }}
       </a>
     </span>
+      <div id="jsi-flying-fish-container" class="container"></div>
     <span v-show="showAccessNumber">
       <i class="iconfont reco-eye"></i>
       <AccessNumber idVal="/" />
@@ -31,6 +32,7 @@
 
 <script>
 import { version } from '../package.json'
+
 export default {
   data () {
     return {
@@ -50,7 +52,11 @@ export default {
       }
       return false
     }
-  }
+  },
+  mounted(){
+  
+  },
+
 }
 </script>
 
@@ -79,6 +85,9 @@ export default {
       a {
         vertical-align middle
       }
+    }
+    #jsi-flying-fish-container{
+      height:100px; 
     }
   }
 
