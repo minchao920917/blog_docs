@@ -27,7 +27,7 @@
 
         <div
           class="last-updated"
-          v-if="lastUpdated"
+          v-if="lastUpdated && false"
         >
           <span class="prefix">{{ lastUpdatedText }}: </span>
           <span class="time">{{ lastUpdated }}</span>
