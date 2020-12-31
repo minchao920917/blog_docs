@@ -12,12 +12,16 @@ module.exports = {
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间', link: '/timeline/', icon: 'reco-date' },
       { text: '文档', 
-        icon: 'reco-message',
+        icon: 'reco-api',
         items: [
           { text: 'mcf-cli', link: '/docs/mcf-cli/' },
           { text: 'mch-ui', link: '/docs/mch-ui/' }
         ]
       },
+      // { text: '关于', 
+      //   icon: 'reco-account',
+      //   link: '/about'
+      // },
       { text: '连接', 
         icon: 'reco-message',
         items: [
