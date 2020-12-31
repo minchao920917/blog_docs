@@ -98,5 +98,5 @@ export default {
         background-color: $accentColor;
         color #fff
       &:not(.active)
-        border-right 1px solid #666
+        // border-right 1px solid #666
 </style>
