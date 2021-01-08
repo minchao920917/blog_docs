@@ -44,7 +44,8 @@ export default {
   },
 
   created () {
-    this.refreshIndex()
+    this.refreshIndex();
+    console.log("items",this.items);
   },
 
   watch: {

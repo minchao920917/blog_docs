@@ -15,7 +15,7 @@ module.exports = {
         icon: 'reco-api',
         items: [
           { text: 'mcf-cli', link: '/docs/mcf-cli/' },
-          { text: 'mch-ui', link: '/docs/mch-ui/' }
+          { text: 'mc-ui', link: '/docs/mc-ui/' }
         ]
       },
       // { text: '关于', 
@@ -35,11 +35,34 @@ module.exports = {
       '/docs/mcf-cli/': [
         '',
       ],
-      '/docs/mch-ui/': [
-        '',
-        '字体图标',
-        '布局',
-        '按钮'
+      '/docs/mc-ui/': [
+        {
+          title: '介绍 Introduction',
+          collapsable: false,
+          children: [
+            '',
+            '更新日志',
+          ]
+        },
+        {
+          title: '使用安装 Install',
+          collapsable: false,
+          children: [
+            '使用指南'
+          ]
+        },
+
+        {
+          title: '基础组件 Basic',
+          collapsable: false,
+          children: [
+            '色彩',
+            '布局',
+            '字体图标',
+            '按钮'
+          ]
+        },
+       
       ]
     },  
     sidebarDepth: 3,
