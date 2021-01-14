@@ -18,16 +18,15 @@ module.exports = {
           { text: 'mc-ui', link: '/docs/mc-ui/' }
         ]
       },
-      // { text: '关于', 
-      //   icon: 'reco-account',
-      //   link: '/about'
-      // },
+      { text: '旧版博客', 
+        icon: 'reco-account',
+        link: 'https://minchao920917.github.io/'
+      },
       { text: '连接', 
         icon: 'reco-message',
         items: [
           { text: '掘金', link: 'https://juejin.cn/user/2119514150414702', icon: 'reco-juejin' },
-          { text: 'GitHub', link: 'https://github.com/minchao920917', icon: 'reco-github' },
-          { text: '旧版博客', link: 'https://minchao920917.github.io/', icon: 'reco-account' },
+          { text: 'GitHub', link: 'https://github.com/minchao920917', icon: 'reco-github' }
         ]
       }
     ],
