@@ -22,6 +22,7 @@ module.exports = {
         icon: 'reco-account',
         link: 'https://minchao920917.github.io/'
       },
+      { text: '联系 or 支持', link: '/contact/' },
       { text: '连接', 
         icon: 'reco-message',
         items: [
