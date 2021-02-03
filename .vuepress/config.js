@@ -19,10 +19,10 @@ module.exports = {
         ]
       },
       { text: '旧版博客', 
-        icon: 'reco-account',
+        icon: 'reco-blog',
         link: 'https://minchao920917.github.io/'
       },
-      { text: '联系 or 支持', link: '/contact/' },
+      { text: '联系 or 支持', icon:'reco-account', link: '/contact/' },
       { text: '连接', 
         icon: 'reco-message',
         items: [

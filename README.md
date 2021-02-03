@@ -21,4 +21,5 @@ actionLink: /views/other/guide
 
 ### mcf-cli
 
+脚手架工具
 ### mch-ui
