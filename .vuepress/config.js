@@ -62,7 +62,14 @@ module.exports = {
             '按钮'
           ]
         },
-       
+        {
+          title: '表单组件 Form',
+          collapsable: false,
+          children: [
+            '输入框',
+            
+          ]
+        },
       ]
     },  
     sidebarDepth: 3,
