@@ -49,7 +49,13 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/docs/mcf-cli/": [""],
+      "/docs/mcf-cli/": [
+        {
+          title: "介绍 Introduction",
+          collapsable: false,
+          children: ["", "更新日志"],
+        },
+      ],
       "/docs/mc-ui/": [
         {
           title: "介绍 Introduction",
