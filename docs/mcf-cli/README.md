@@ -7,10 +7,20 @@ date: 2019-10-29
 
 ##  快速上手
 
-###     使用mcf-cli创建vue项目
+###     使用mcf-cli创建react多页面项目
 
     > npm i -g mcf-cli
-    > mcf create-vue your-project
+    > mcf react-multi your-project
+###     使用mcf-cli创建vue-admin项目
+
+    > npm i -g mcf-cli
+    > mcf vue-admin your-project
+    > npm i && npm run dev
+
+###     使用mcf-cli创建vue-app项目
+
+    > npm i -g mcf-cli
+    > mcf vue-app your-project
     > npm i && npm run dev
 
 ###     使用mcf add添加项目到模板列表
