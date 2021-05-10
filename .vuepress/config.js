@@ -78,6 +78,11 @@ module.exports = {
           collapsable: false,
           children: ["输入框", "单选框", "复选框"],
         },
+        {
+          title: "其他组件 Other",
+          collapsable: false,
+          children: ["弹框"],
+        },
       ],
     },
     sidebarDepth: 3,
