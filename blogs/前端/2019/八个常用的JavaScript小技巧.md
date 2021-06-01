@@ -3,6 +3,7 @@ title: ES6的八个常用JavaScript小技巧
 date: 2019-05-13 23:00:54
 tags:
  - ES6 
+ - 面试
 categories:
  - 前端
 ---
