@@ -176,6 +176,13 @@ innerHTML很多情况下都优于document.write
     var sayAlert= say();
     sayAlert();
 
+    // 889
+
+    闭包的特性：
+    1、函数内再嵌套函数
+    2、内部函数可以引用外层的参数和变量
+    3、参数和变量不会被垃圾回收机制回收
+
 ##  16、请事先ECMAScript5中的Object.getPrototypeOf()函数。
 
 ##  17、如何实现Array.prototype.forEach?
