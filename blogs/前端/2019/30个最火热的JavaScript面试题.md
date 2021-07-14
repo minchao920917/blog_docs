@@ -238,7 +238,63 @@ innerHTML很多情况下都优于document.write
     </html>
 
 ##  26、如何规避在JavaScript中多人开发造成的函数重名问题
+
+    1、命名空间
+    2、封闭空间
+    3、js模块化mvc（数据层、表现层、控制层）
+    4、seajs（如果了解的呢，可以说）
+    5、变量转换成对象的属性
+    6、对象化
 ##  27、前端开发有哪些优化问题
+
+    1、避免过多的回流与重绘
+    2、压缩
+        2.1 GZIP
+        2.2 服务端压缩压缩
+        2.3 JavaScript、CSS、html压缩
+        2.4 http2压缩
+    3、webpack优化
+        3.1 DllPlugin提升构建速度
+        3.2 splitChunks拆包
+    4、骨架屏占位
+    5、缓存
+        5.1 http缓存
+        5.2 service worker
+    6、预加载和懒加载
+        6.1 preload
+        6.2 prefetch
+        6.3 懒加载-图片懒加载、路由懒加载
+    7、SSR和react-snap
+
 ##  28、什么是Ajax，为什么要使用Ajax(请谈一下你对Ajax的认识)
-##  29、Ajax请求总共有多少种callback
-##  30、请给出异步加载JavaScript的方案，不小于两种
+
+AJAX即“Asynchronous Javascript And XML”，是指一种创建交互式网页应用的网页开发技术。
+
+Ajax是一种异步请求数据的web开发技术，对于改善用户的体验和页面性能很有帮助。简单地说，在不需要重新刷新页面的情况下，Ajax 通过异步请求加载后台数据，并在网页上呈现出来。
+
+
+1、创建Ajax核心对象XMLHttpRequest(记得考虑兼容性)
+
+2、向服务器发送请求
+
+3、服务器响应处理（区分同步跟异步两种情况）
+
+    responseText 获得字符串形式的响应数据。
+    responseXML 获得XML 形式的响应数据。
+
+## 29、Ajax请求总共有多少种callback
+
+    1、onSuccess 
+    2、onFailure 
+    3、onUninitialized 
+    4、onLoading 
+    5、onLoaded 
+    6、onInteractive 
+    7、onComplete 
+    8、onException
+
+## 30、请给出异步加载JavaScript的方案，不小于两种
+
+    1、defer，只支持IE
+    2、async：
+    3、创建script，插入到DOM中，加载完毕后callBack
